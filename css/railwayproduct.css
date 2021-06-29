@@ -27,7 +27,6 @@ header{
     position: relative;
     max-width: 100%;
     margin: 0px auto;
-
     box-sizing: border-box;
 }
 .logo img{
@@ -113,7 +112,7 @@ nav ul li a:hover{
 .text {
   color: #000000;
   position: absolute;
-  bottom: 400px;
+  top: 100px;
   width: 35%;
   right: 10px;
 }
@@ -690,6 +689,10 @@ footer{
 .featurette-divider {
   margin: 5rem 2rem;
 }
+.Lailway h1{
+  margin-left: 0px;
+  font-size: 16px;
+}
 .content .textBox{
   margin: 0 0 0 2rem;
 }
@@ -754,15 +757,6 @@ footer{
   display: grid;
   grid-template-columns: repeat(1, 0fr);
   padding-left: 180px;
-}
-.Lailway{
-  width: 100%;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-.Lailway h1{
-  margin-left: 0px;
-  font-size: 18px;
 }
 .Lailway .slider p{
   bottom: 45px;
@@ -850,10 +844,6 @@ footer{
 .about-col{
   margin-left: 10px;
  } 
- .Lailway h1 {
-  margin-left: 0px;
-  font-size: 16px;
-}
 .Lailway .slider p {
   bottom: 40px;
 }
