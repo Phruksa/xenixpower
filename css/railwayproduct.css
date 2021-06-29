@@ -23,55 +23,44 @@ body{
 }
 
 /* nav */
-nav{
-  width: 100%;
-  grid-gap : 0px;
-  margin-top: 20px;
-  font-family: 'Rubik', sans-serif;
-  position: absolute;
-  top: 0px;
+header{
+    position: relative;
+    max-width: 100%;
+    margin: 0px auto;
+
+    box-sizing: border-box;
 }
-.logo{
+.logo img{
+  width: 170px;
+  margin: 10px 0px 0px 40px;
   float: left;
-  position: absolute;
-  top: 0;
 }
-.logo a img{
-  width: 230px;
-  margin: 20px 60px;
+nav{
+    float: right;
 }
-summary{
-  display: block;
+.clearfix{
+    clear: both;
 }
-.nav-links{
-  margin-top: 18px;
-  margin-right: 60px;
-  flex: 5;
-  text-align: right;
+nav ul{
+    margin: 10px;
+    padding: 0 30px;
+    display: flex;
 }
-.nav-links ul li{
-  list-style: none;
-  display: inline-block;
-  padding: 8px 12px;
-  position: relative;
+nav ul li{
+    list-style: none;
 }
-.nav-links ul li a{
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  font-size: 13px;
+nav ul li a{
+    display: block;
+    margin: 5px 0;
+    padding: 10px 12px;
+    text-decoration: none;
+    color: #000000 !important;
+    font-size: 12px;
+    font-weight: 200;
 }
-.nav-links ul li::after{
-  content: '';
-  width: 0%;
-  height: 2px;
-  background: #b31409;
-  display: block;
-  cursor: pointer;
-  transition: 0.3s;
-  margin: auto;
-}
-.nav-links ul li:hover::after{
-  width: 100%;
+nav ul li a:hover{
+    border-bottom: 2px solid #a80000;
+    font-weight: 400;
 }
 /* nav */
 
@@ -154,7 +143,7 @@ summary{
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #ffffff;
 }
 
 /* Fading animation */
@@ -473,121 +462,52 @@ footer{
 .header img{
   margin-top: 0px;
 }
- :root {
-    --primColor: #dcdcdc;
-    --secoColor: #555555;
-    --cornerRad: 4px;
 }
 
-details {
-    position: absolute;
-    z-index:9;
-    top:20px;
-    right:10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+@media (max-width:1100px){
+    header{
+      background-color: white;
+    }
 }
-summary {
-    writing-mode: vertical-lr;
-    text-align: center;
-    padding: 0px 0px;
-    width: 23px;
-    height: 17px;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    user-select: none;
-    outline: none;
-    transition: transform 200ms ease-in-out 0s;
-    position: absolute;
-    z-index:9;
-    top:0px;
-    right:20px;
-}
-summary::before,
-summary::after {
-    position: static;
-    top: 0;
-    left: 0;
-}
-summary::before {
-    content: "";
-}
-summary::after {
-    content: "III";
-    letter-spacing: -1px;
-    font-size: 30px;
-}
-summary:hover {
-    transform: scale(1.1);
-}
-summary::marker {
-    font-size: 0;
-}
-summary::-webkit-details-marker {
-    display: none;
-}
-details[open] .menu {
-    animation-name: menuAnim;
-}
-details[open] summary::before {
-    content: "X";
-}
-details[open] summary::after {
-    content: "";
-}
-.menu {
-    height: 0;
-    width: fit-content;
-    border-radius: var(--cornerRad);
-    background-color:white;
-    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
-    animation: closeMenu 300ms ease-in-out forwards;
-}
-.menu a {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    padding: 12px 24px;
-    margin: 0 16px;
-    color: var(--secoColor);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-    text-decoration: none;
-    text-align: center;
-    transition: filter 200ms linear 0s;
-}
-.menu a:nth-of-type(1) {
-    padding-top: 24px;
-}
-.menu a:nth-last-of-type(1) {
-    border-bottom: none;
-}
-.menu a:hover {
-    filter: brightness(200%);
-    color: red;
-}
+@media (max-width:900px){
+    .menu-bar{
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        float: right;
+        cursor: pointer;
+        font-size: 30px;
+    }
+    .menu-bar::before{
+        content: '\f0c9';
+        font-family: 'fontawesome';
+        line-height: 40px;
 
-@keyframes menuAnim {
-    0% {
-      height: 0;
     }
-    100% {
-      height: 312px;
+    .menu-bar.active::before{
+        content: '\f00d';
+    }
+    nav{
+        display: none;
+    }
+    nav.active{
+        display: block;
+        width: 100%;
+        border-radius: 4px;
+        box-shadow: 0px 2px 5px rgba(0,0,0,.2);
+        
+    }
+    nav.active ul{
+        display: block;
+        color: #000000;
+    }
+    nav.active ul li a{
+        text-align: center;
+        color: #000000 !important;
+  
     }
 }
-@keyframes fadeMe {
-    0% {
-      opacity: 0.4;
-    }
-    100% {
-      opacity: 0;
-    }
-}
-}
-
 
 @media(max-width: 900px){
   .logo a img{
