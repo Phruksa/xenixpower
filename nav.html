@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>navbar</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="icon" href="images/mini-logo.png" type="image/png" sizes="16x16">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" >
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+            <div class="menu-bar">
+                <nav >
+                    <ul>
+                        <li><a href="#" class="active">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">PRODUCT</a></li>
+                        <li><a href="#">PARTNAER</a></li>
+                        <li><a href="#">SERVICE</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                  </nav>
+            </div>
+        </div>
+    </header>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('.navbar .fa').click(function(){
+                $('.navbar .fa').toggleClass('active')
+            })
+        })
+        </script>
+    </body>
+</html>

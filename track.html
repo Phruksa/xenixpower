@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Level Crossing</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/levelcrossing.css">
+        <link rel="icon" href="images/mini-logo.png" type="image/png" sizes="16x16">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" >
+    </head>
+    <body>
+        <section class="header" >
+            <main>
+            <!-- nav -->
+            <div class="logo">
+                <a href="home.html"><img src="images/logo.png" ></a>
+            </div>
+            <nav>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="About.html">ABOUT</a></li>
+                        <li><a href="Products.html">PRODUCTS</a></li>
+                        <li><a href="Partner.html">PARTNER</a></li>
+                        <li><a href="Service.html">SERVICE</a></li>
+                        <li><a href="Contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <details>
+                    <summary></summary>
+                    <nav class="menu">
+                        <a href="About.html">ABOUT</a>
+                        <a href="Partner.html">PARTNER</a>
+                        <a href="Product">PRODUCTS</a>
+                        <a href="Service.html">SERVICE</a>
+                        <a href="Contact.html">CONTACT</a>
+                    </nav>
+                  </details>
+            </nav>
+            <div class="content">
+                <div class="textBox">
+                    <h2>TRACK CIRCUIT</h2>
+                    <p>A level crossing is an intersection where a railway line crosses 
+                        a road or path, or in rare situations an airport runway, at the same l
+                        evel, as opposed to the railway line crossing over or under using an overpass 
+                        or tunnel. The term also applies when a light rail line with separate right-of-way 
+                        or reserved track crosses a road in the same fashion. Other names include railway level crossing,
+                        railway crossing (chiefly international), railroad crossing (chiefly North American), grade crossing,
+                        road through railroad, criss-cross, train crossing, and RXR (abbreviated).</p>
+                </div>
+                <div class="imgBox">
+                      <img src="imgproduct/level-crossing-guide.jpg" class="levelcrossing">  
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="imgproduct/level-crossing-guide.jpg"></li>
+                <li><img src="imgproduct/level-crossing.jpg"></li>
+                <li><img src="imgproduct/level-crossing-guide.jpg"></li>
+            </ul>
+            </main>
+        </section>
+
+
+
+
+
+
+        
+        <p id="back-top">
+            <a href="#top">
+                <span style="color: white;" class="glyphicon glyphicon-arrow-up pondtoptoptop">
+                    <img src="imgproduct/upup.png">
+                </span>
+                Back to top
+            </a>
+        </p>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	// hide #back-top first
+	$("#back-top").hide();
+	// fade in #back-top
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 150) {
+				$('#back-top').fadeIn();
+			} else {
+				$('#back-top').fadeOut();
+			}
+		});
+		// scroll body to 0px on click
+		$('#back-top a').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 1100);
+			return false;
+		});
+	});
+});
+</script>
+        
+         <!-- footer -->
+      <footer class="footer">
+        <div class="footer-left">
+            <img class="footer-logo" src="images/logo.png" alt="">
+            <img class="footer-socotec" src="images/Socotec-9001.png" alt="">
+
+        </div>
+        <ul class="footer-right">
+            <li>
+                <h2>Home</h2>
+
+                <ul class="box">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Partner</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </li>
+            <li class="feature">
+                <h2>Product</h2>
+                <ul class="box">
+                    <li><a href="#">Electrical Power System</a></li>
+                    <li><a href="#">Railway Engineering</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2>Address</h2>
+                <ul class="box">
+                    <li><a>23 Moo. 3 </a></li>
+                    <li><a>Phutthamonthon 5 Road.</a></li>
+                    <li><a>Kratumlom Sampran </a></li>
+                    <li><a>Nakhonpathom 73220,</a></li>
+                    <li><a>Thailand</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="footer-bottom">
+            <p>&copy; xenix electech co. ltd </p>
+        </div>
+    </footer> 
+</body>
+</html>
