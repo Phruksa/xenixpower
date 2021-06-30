@@ -18,24 +18,37 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" >
     </head>
     <body>
-        <section class="header" >
-             <!-- nav -->
-          <header>
-            <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
-            <div class="menu-bar"></div>
-                <nav >
-                    <ul>
-                        <li><a href="#" >HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">PRODUCT</a></li>
-                        <li><a href="#">PARTNAER</a></li>
-                        <li><a href="#">SERVICE</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                    </ul>
-                  </nav>
+        <!-- ********************** nav ************************ -->
+        <div class="nav">
+            <a class="logo" href="home.html">
+                <img src="images/logo.png" width="170px">
+            </a>
+
+            <div class="navbar-toggler" type="button" id="bar">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+            </div>
+            
+            <div class="menu-bar" id="navbar">
+                <ul class="menu-item">
+                    <li><a href="about.html">ABOUT </a></li>
+                    <li><a href="product.html">PRODUCTS</a></li>
+                    <li><a href="partner.html">PARTNER</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+
         </div>
-        <div class="clearfix"></div>
-        </header>
+        <!-- ********************** head-shape ************************ -->
+        <div class="back" id="home">
+            <div class="overlay"></div>
+            </div>
+        </div>
+
+        <!-- ********************** form ************************ -->
+        <section class="header" >
             <!-- Slideshow container -->
             <div class="slideshow-container">
             <!-- Full-width images with number and caption text -->
@@ -267,6 +280,8 @@ $(document).ready(function(){
             <p>&copy; xenix electech co. ltd </p>
         </div>
     </footer> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+    <script src="script/nav.js"></script>
     <script src="/script/railwayproduct.js"></script>
 </body>
 </html>
