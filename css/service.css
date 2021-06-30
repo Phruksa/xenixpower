@@ -187,7 +187,7 @@ main{
 
 
 
-/* footer */
+/********************** footer ************************/
 h2{
     font-weight: 600;
     font-size: 17px;
@@ -265,16 +265,83 @@ h2{
   }
 
 
-  @media (max-width:720px){
+/********************** responsive ************************/
+
+  @media (max-width:1100px){
     .main .textser{
         width: 500px;
-        margin-left: 10%;
+        margin-left: 25%;
     }
     .dataserver{
         grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 80px;
         grid-column-gap: 8rem;
-        margin-left: 3rem;
+        margin-left: 10rem;
+    }
+    .img img{
+        margin-left: 25%;
+    }
+  }
+  @media (max-width:1000px){
+    .main .textser{
+        width: 500px;
+        margin-left: 20%;
+    }
+    .dataserver{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 80px;
+        grid-column-gap: 8rem;
+        margin-left: 10rem;
+    }
+    .img img{
+        margin-left: 25%;
+    }
+  }
+  @media (max-width:900px){
+    .main .textser{
+        width: 500px;
+        margin-left: 20%;
+    }
+    .dataserver{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 80px;
+        grid-column-gap: 8rem;
+        margin-left: 10rem;
+    }
+    .img img{
+        margin-left: 25%;
+    }
+  }
+
+  @media (max-width:800px){
+    .main .textser{
+        width: 500px;
+        margin-left: 20%;
+    }
+    .dataserver{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 80px;
+        grid-column-gap: 8rem;
+        margin-left: 6rem;
+    }
+    .dataserver .databox1,.dataserver .databox2,.dataserver .databox3,.dataserver .databox4{
+        width: 200px;
+    }
+    .img img{
+        margin-left: 20%;
+    }
+  }
+
+  @media (max-width:720px){
+    .main .textser{
+        width: 500px;
+        margin-left: 15%;
+    }
+    .dataserver{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 80px;
+        grid-column-gap: 8rem;
+        margin-left: 5rem;
     }
     .dataserver .databox1,.dataserver .databox2,.dataserver .databox3,.dataserver .databox4{
         width: 200px;

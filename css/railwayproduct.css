@@ -415,7 +415,7 @@ hr {
 .location-box .textBox{
   position: relative;
   max-width: 580px;
-  margin: 0 5rem 0 0;
+  margin: 0 5rem 0 5rem;
 }
 .textBox .more{
   display: inline-block;
@@ -549,6 +549,14 @@ footer{
    
 
  /*resposive*/
+ @media (max-width:1200px){
+  .localproduct-box{
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    padding-left: 160px;
+    margin-top: 20px;
+  }
+}
 @media (max-width:1100px){
     .text {
       top:80px;
@@ -640,7 +648,7 @@ footer{
 .localproduct-box{
   display: grid;
   grid-template-columns: repeat(3, 0fr);
-  padding-left: 57px;
+  padding-left: 40px;
   margin-top: 20px;
 }
 .Lailway{
@@ -689,7 +697,7 @@ footer{
 }
 .location-box .textBox{
   max-width: 400px;
-  margin: 0 5rem 0 0;
+  margin: 0 5rem 0 3rem;
 }
 footer{
   margin-top: 5rem;
@@ -719,11 +727,17 @@ footer{
     padding-left: 200px;
     margin-top: 40px;
 }
+.header{
+  min-height: 40vh;
+}
 .text {
   top:130px;
   right: 30px;
   width: 50%;
   height: 195px;
+}
+.localproduct-box {
+  padding-left: 30%;
 }
 .featurette-divider {
   margin: 5rem 2rem;
@@ -766,7 +780,9 @@ footer{
     width: 190px;
     margin: 10px 10px;
   }
-
+  .header{
+    min-height: 40vh;
+  }
 .text {
   top:120px;
   right: 30px;
@@ -854,6 +870,9 @@ footer{
 }
 
 @media(max-width:500px){
+  .header{
+    min-height: 40vh;
+  }
   .text {
     top: 80px;
     right: 19px;
@@ -916,12 +935,12 @@ footer{
 }
 }
 
-@media(max-width:400px){
+@media(max-width:450px){
   .text {
-    top: 80px;
-    right: 19px;
-    width: 90%;
-    height: 140px;
+    display: none;
+}
+.header{
+  min-height: 20vh;
 }
 .localproduct-box {
   padding-left: 80px;
@@ -988,6 +1007,9 @@ footer{
 @media(max-width:300px){
   .text {
     display: none;
+}
+.header{
+  min-height: 20vh;
 }
 .localproduct-box {
   padding-left: 30px;

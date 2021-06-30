@@ -18,33 +18,36 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" >
     </head>
     <body>
-        <section class="header" >
-            <main>
-            <!-- nav -->
-            <div class="logo">
-                <a href="home.html"><img src="images/logo.png" ></a>
+        <!-- ********************** nav ************************ -->
+        <div class="nav">
+            <a class="logo" href="home.html">
+                <img src="images/logo.png" width="170px">
+            </a>
+
+            <div class="navbar-toggler" type="button" id="bar">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
             </div>
-            <nav>
-                <div class="nav-links">
-                    <ul>
-                        <li><a href="About.html">ABOUT</a></li>
-                        <li><a href="Products.html">PRODUCTS</a></li>
-                        <li><a href="Partner.html">PARTNER</a></li>
-                        <li><a href="Service.html">SERVICE</a></li>
-                        <li><a href="Contact.html">CONTACT</a></li>
-                    </ul>
-                </div>
-                <details>
-                    <summary></summary>
-                    <nav class="menu">
-                        <a href="About.html">ABOUT</a>
-                        <a href="Partner.html">PARTNER</a>
-                        <a href="Product">PRODUCTS</a>
-                        <a href="Service.html">SERVICE</a>
-                        <a href="Contact.html">CONTACT</a>
-                    </nav>
-                  </details>
-            </nav>
+            
+            <div class="menu-bar" id="navbar">
+                <ul class="menu-item">
+                    <li><a href="about.html">ABOUT </a></li>
+                    <li><a href="product.html">PRODUCTS</a></li>
+                    <li><a href="partner.html">PARTNER</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- ********************** head-shape ************************ -->
+        <div class="back" id="home">
+            <div class="overlay"></div>
+            </div>
+        </div>
+
+        <!-- ********************** form ************************ -->
             <div class="content">
                 <div class="imgBox">
                     <img src="imgproduct/level-crossing-guide.jpg" class="levelcrossing">  
@@ -147,5 +150,7 @@ $(document).ready(function(){
             <p>&copy; xenix electech co. ltd </p>
         </div>
     </footer> 
+    <script src="script/nav.js"></script>
+    <script src="/script/railwayproduct.js"></script>
 </body>
 </html>
