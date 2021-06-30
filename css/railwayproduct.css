@@ -55,7 +55,7 @@ nav ul li a{
     text-decoration: none;
     color: #000000 !important;
     font-size: 12px;
-    font-weight: 200;
+    font-weight: 300;
 }
 nav ul li a:hover{
     border-bottom: 2px solid #a80000;
