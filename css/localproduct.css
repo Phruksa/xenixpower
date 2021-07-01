@@ -152,6 +152,7 @@
     width: 500px;
     height: 300px;
   }
+
   .content h2{
     font-size: 46px;
     font-weight: 400;
@@ -162,6 +163,9 @@
   margin-left: 15%;
   margin-top: 8%;
   margin-bottom: 20%;
+  }
+  .content .rail{
+      margin-top: 0%;
   }
   .text p{
     padding-top: 20px;
