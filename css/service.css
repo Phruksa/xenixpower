@@ -78,14 +78,12 @@ h6{
 /********************** head-shape ************************/
 .back{
     width: 100%;
-    height: 120vh;
+    height: 10vh;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
 }
 .back .overlay{
-    background-image: linear-gradient(rgba(204, 204, 204, 0.733), rgba(146, 146, 146, 0.7),rgba(26, 26, 27, 0.7)),
-                url(https://cdn.prgloo.com/media/b7924f8487564672bf433e0193057b77.jpg?width=1135&height=960);
     width: 100%;
     height: 100%;
 }
@@ -142,7 +140,7 @@ h6{
 /********************** mainservice ************************/
 main{
     margin-top: 3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
 } 
 .main{
     text-align: center;

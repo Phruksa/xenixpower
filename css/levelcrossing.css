@@ -79,13 +79,13 @@ h6{
 .back{
   /* background-image: url(https://www.img.in.th/images/da796d73f3d1193abf7ad21bde5e91e5.png); */
   width: 100%;
-  height: 120vh;
+  height: 10vh;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
 }
 .back .overlay{
-  background-image: linear-gradient(rgba(255, 255, 255, 0.733), rgba(180, 180, 180, 0.7),rgba(26, 26, 27, 0.7)),
+  background-image: linear-gradient(rgba(255, 255, 255, 0.733)),
               url(https://www.img.in.th/images/adf0539f7758adceb5ad7b36df578bfc.png);
   width: 100%;
   height: 100%;
@@ -100,16 +100,6 @@ h6{
   width: 100%;
   display: block;
 }
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 946px){
   .nav{
       padding: 1rem 1rem;
@@ -147,4 +137,139 @@ h6{
   .nav .menu-bar .menu-item li{
       margin: 2rem 30px;
   }
+}
+
+
+
+/********************** main ************************/
+.content{
+  display: grid;
+  grid-template-columns: repeat(2,0fr);
+  margin-top: 5rem;
+  margin-left: 8%;
+}
+.content .img img{
+  width: 500px;
+  height: 300px;
+}
+.content h2{
+  font-size: 46px;
+  font-weight: 400;
+}
+.content .text{
+width: 500px;
+margin-left: 15%;
+margin-top: 8%;
+margin-bottom: 20%;
+}
+.text p{
+  padding-top: 20px;
+  font-size: 16px;
+}
+
+.thumb{
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  display: flex;
+  top: 80%;
+}
+.thumb li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.thumb li:hover{
+  transform: translateY(-15px);
+}
+.thumb li img{
+  width: 90px;
+  height: 50px;
+}
+.thumb li .imgSlider{
+width: 500px;
+height: 400px;
+
+}
+
+
+/* footer */
+h2{
+  font-weight: 600;
+  font-size: 17px;
+}
+footer{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px 50px 30px;
+  color: #fff;
+  background-color: #2e2e2e;
+  z-index: -5;
+  margin-top: 15%;
+}
+.footer > *{
+  flex: 1 100%;
+}
+.footer-left{
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+.footer-logo {
+  width: 60%;
+}
+.footer-socotec{
+  width: 55%;
+  margin: 15px;
+}
+.footer ul{
+  list-style: none;
+  padding-left: 0;
+}
+.footer li{
+  line-height: 2em;
+}
+.footer a{
+  text-decoration: none;
+}
+.footer-right{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: row wrap;
+}
+.footer-right > *{
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+.box a{
+  color: #999;
+}
+.footer-bottom{
+  text-align: center;
+  color: #999;
+  padding-top: 30px;
+}
+@media(min-width: 600px){
+  .footer-right > *{
+      flex: 1;
+  }
+  .footer-left{
+      flex: 1 0px;
+  }
+  .footer-right{
+      flex: 2 0px;
+  }
+  .row{
+    display: grid;
+    grid-row: inherit;
+}
 }
