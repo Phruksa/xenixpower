@@ -195,10 +195,9 @@
     height: 50px;
   }
   .thumb li .imgSlider{
-  width: 500px;
-  height: 400px;
-  
-  }
+    width: 500px;
+    height: 400px;
+    }
   /* previous and next */
   .prenext a{
     text-decoration: none;

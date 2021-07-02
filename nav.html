@@ -1,41 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <title>navbar</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/nav.css" type="text/css">
+        <title>Service | Xenix Electech Ltd.</title>
         <link rel="icon" href="images/mini-logo.png" type="image/png" sizes="16x16">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" >
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/nav.css">
     </head>
     <body>
-        <header>
-            <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
-            <div class="menu-bar"></div>
-                <nav >
-                    <ul>
-                        <li><a href="#" class="active">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">PRODUCT</a></li>
-                        <li><a href="#">PARTNAER</a></li>
-                        <li><a href="#">SERVICE</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                    </ul>
-                  </nav>
+        <!-- ********************** nav ************************ -->
+        <div class="nav">
+            <a class="logo" href="home.html">
+                <img src="images/logo.png" width="170px">
+            </a>
+
+            <div class="navbar-toggler" type="button" id="bar">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+            </div>
+            
+            <div class="menu-bar" id="navbar">
+                <ul class="menu-item">
+                    <li><a href="about.html">ABOUT </a></li>
+                    <li><a href="product.html">PRODUCTS</a></li>
+                    <li><a href="partner.html">PARTNER</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+
         </div>
-        <div class="clearfix"></div>
-    </header>
-        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-        <script type="text/javascript">
-        $(document).ready(function(){
-            $('.menu-bar').click(function(){
-                $('.menu-bar').toggleClass('active')
-                $('nav').toggleClass('active')
-            })
-        })
-        </script>
+        <!-- ********************** head-shape ************************ -->
+        <div class="back" id="home">
+            <div class="overlay"></div>
+            <div class="hero-shape">
+                <img src="images/header-shape.svg">
+            </div>
+        </div>
+
+        <!-- ********************** form ************************ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
