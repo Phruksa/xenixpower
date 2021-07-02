@@ -306,3 +306,24 @@
       grid-row: inherit;
   }
   }
+
+
+  /* responsive */
+  
+  @media (max-width:1190){
+      .content .text {
+        width: 480px;
+        margin-left: 12%;
+  }
+  }
+
+  @media (max-width:1100){
+    .content .text {
+      width: 400px;
+      margin-left: 10%;
+}
+.content .img img {
+  width: 450px;
+  height: 300px;
+}
+  }
