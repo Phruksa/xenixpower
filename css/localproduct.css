@@ -204,6 +204,7 @@
     text-decoration: none;
     display: inline-block;
     padding: 10px 16px;
+    margin-top: 3%;
   }
   
   .prenext a:hover {
@@ -244,7 +245,7 @@
     color: #fff;
     background-color: #2e2e2e;
     z-index: -5;
-    margin-top: 15%;
+    margin-top: 8%;
   }
   .footer > *{
     flex: 1 100%;
