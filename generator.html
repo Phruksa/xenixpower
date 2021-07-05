@@ -54,7 +54,7 @@
                 <div class="content">
                     <div class="textbox">
                         <h1>It's not just Generator<br>It's <span>Xenix</span></h1>
-                        <p>We comprehend the important of your time. Your demand 
+                        <p id="textdata">We comprehend the important of your time. Your demand 
                             always is our priority. We can help you avoid any obstacles 
                             which may arise. When business is facing difficulties from 
                             unstable electricity, allow us to assist you by our products.
@@ -65,9 +65,9 @@
                     </div>
                 </div>
                 <ul class="thumb">
-                    <li class="marine"><img src="imgproduct/marinee-removebg.png" onclick="imgSlider('imgproduct/marinee-removebg.png');changeCircleColor('#f7d200')"></li>
-                    <li><img src="imgproduct/gas-removebg.png"       onclick="imgSlider('imgproduct/gas-removebg.png');changeCircleColor('#2d5e30')"></li>
-                    <li><img src="imgproduct/industrial-removebg.png"  onclick="imgSlider('imgproduct/industrial-removebg.png');changeCircleColor('#858585')"></li>
+                    <li class="marine"><img src="imgproduct/marinee-removebg.png" onclick="imgSlider('imgproduct/marinee-removebg.png');changeCircleColor('#f7d200');changetext1('')"></li>
+                    <li><img src="imgproduct/gas-removebg.png"       onclick="imgSlider('imgproduct/gas-removebg.png');changeCircleColor('#2d5e30') ;changetext2('')"></li>
+                    <li><img src="imgproduct/industrial-removebg.png"  onclick="imgSlider('imgproduct/industrial-removebg.png');changeCircleColor('#858585');changetext3('')"></li>
                 </ul>
             </section>
 
@@ -80,12 +80,17 @@
                     const circle = document.querySelector('.circle');
                     circle.style.background = color;
                 }
+
+                function changetext1(text){
+                    document.querySelector('.textbox p').innerHTML = "We comprehend the important of your time. Your demand always is our priority. We can help you avoid any obstacles which may arise. When business is facing difficulties from unstable electricity, allow us to assist you by our products.";
+                }
+                function changetext2(text){
+                    document.querySelector('.textbox p').innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tenetur deleniti id velit asperiores veritatis ratione exercitationem esse explicabo assumenda, ab earum nobis, cum perspiciatis ducimus? Voluptate natus veniam eaque iusto rerum similique repellendus ex numquam commodi nesciunt, tempore exercitationem!";
+                }
+                function changetext3(text){
+                    document.querySelector('.textbox p').innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quas, atque esse at beatae nostrum inventore harum, ab dignissimos eligendi voluptatibus. Beatae dolorum rerum quaerat et ratione ipsa ullam ex.";
+                }
             </script>
-
-
-            
-
-
             <!-- To top -->
             <p id="back-top">
                 <a href="#top">
