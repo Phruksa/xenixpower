@@ -337,6 +337,7 @@ h6{
 }
 .elebox .textbox{
     margin-left: 120px;
+    
 }
 .railwaybox .textbox{
     margin-right: 80px;
@@ -344,9 +345,8 @@ h6{
 }
 .elebox .textbox , .railwaybox .textbox{
     font-size: 30px;
-    background-color: rgba(208, 226, 250, 0.4); 
+    background-color: rgba(150, 150, 150, 0.4); 
     backdrop-filter: blur(10px);
-    padding: 90px 10px 10px 40px;
     width: 70%;
     height: 70%;
     margin-top: 8%;
@@ -355,7 +355,7 @@ h6{
     padding: 80px 10px 10px 40px;
 }
 .railwaybox .textbox{
-    padding: 80px 10px 10px 70px;
+    padding: 100px 10px 10px 70px;
 }
 .text-Box{
     margin-top: 3rem;
