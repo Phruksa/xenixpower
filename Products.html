@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Products | Xenix Electech Ltd.</title>
+        <link rel="icon" href="images/mini-logo.png" type="image/png" sizes="16x16">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/Products.css">
+    </head>
+    <body>
+        <!-- ********************** nav ************************ -->
+        <div class="nav">
+            <a class="logo" href="home.html">
+                <img src="images/logo.png" width="170px">
+            </a>
+
+            <div class="navbar-toggler" type="button" id="bar">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+            </div>
+            
+            <div class="menu-bar" id="navbar">
+                <ul class="menu-item">
+                    <li><a href="about.html">ABOUT </a></li>
+                    <li><a href="product.html">PRODUCTS</a></li>
+                    <li><a href="partner.html">PARTNER</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- ********************** head-shape ************************ -->
+        <div class="back" id="home">
+            <div class="overlay"></div>
+        </div>
+
+        <!-- ********************** form ************************ -->
+        <section class="header" >
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+            <img src="imgproduct/rw1.jpg" style="width: 100%;">
+            <div class="text">
+                <p class="hp">PRODUCTS</p>
+                <p class="datahp">Xenix Electech is a reputable local engineering firm very
+                    experienced in the supply of railway technologies for SRT over
+                    many years.
+                    Products and systems manufactured, delivered and supported
+                    by Xenix include power supplies, insulated rail joints, signals
+                    and complete level crossing solutions.</p>
+            </div>
+            </div>
+
+            <div class="mySlides fade">
+            <img src="imgproduct/rw2.jpg" style="width:100%">
+            <div class="textele">
+                <p class="ele">Electrical Power System</p>
+                <p class="dataele">Xenix Electech is a reputable local engineering firm very
+                    experienced in the supply of railway technologies for SRT over
+                    many years.
+                    Products and systems manufactured, delivered and supported
+                    by Xenix include power supplies, insulated rail joints, signals
+                    and complete level crossing solutions.</p>
+            </div>
+            </div>
+        
+            <div class="mySlides fade">
+            <img src="imgproduct/rw3.jpg">
+            <div class="textlailway">
+                <p class="lailway">Railway Engineering</p>
+                <p class="datalailway">Xenix Electech is a reputable local engineering firm very
+                    experienced in the supply of railway technologies for SRT over
+                    many years.
+                    Products and systems manufactured, delivered and supported
+                    by Xenix include power supplies, insulated rail joints, signals
+                    and complete level crossing solutions.</p>
+            </div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        </section>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.menu-bar').click(function(){
+                    $('.menu-bar').toggleClass('active')
+                    $('nav').toggleClass('active')
+                })
+            })
+            </script>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+        <script src="script/nav.js"></script>
+        <script src="/script/railwayproduct.js"></script>
+    </body>
+</html>
