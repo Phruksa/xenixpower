@@ -1138,27 +1138,3 @@ footer{
 }
 } */
 
-
-@media (min-width: 992px){
-.container, .container-lg, .container-md, .container-sm {
-    max-width: 960px;
-}
-}
-@media (min-width: 768px){
-.container, .container-md, .container-sm {
-    max-width: 720px;
-}
-.row-cols-md-3>* {
-  flex: 0 0 auto;
-  width: 33.3333333333%;
-}
-}
-@media (min-width: 576px){
-.container, .container-sm {
-    max-width: 540px;
-}
-.row-cols-sm-2>* {
-  flex: 0 0 auto;
-  width: 50%;
-}
-}
