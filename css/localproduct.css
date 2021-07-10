@@ -142,62 +142,44 @@
   
   
   /********************** main ************************/
-  .content{
-    display: grid;
-    grid-template-columns: repeat(2,0fr);
-    margin-top: 5rem;
-    margin-left: 8%;
-  }
-  .content .img img{
-    width: 500px;
-    height: 300px;
+.row-local{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin-top: 50px;
   }
 
-  .content h2{
-    font-size: 46px;
-    font-weight: 400;
-    color: #a80000;
-  }
-  .content .text{
-  width: 500px;
-  margin-left: 15%;
-  margin-top: 8%;
-  margin-bottom: 20%;
-  }
-  .content .rail{
-      margin-top: 0%;
-  }
-  .text p{
-    padding-top: 20px;
-    font-size: 16px;
-  }
-  
-  .thumb{
-    position: absolute;
-    left: 50%;
-    bottom: 20px;
-    transform: translateX(-50%);
-    display: flex;
-    top: 80%;
-  }
-  .thumb li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  .thumb li:hover{
-    transform: translateY(-15px);
-  }
-  .thumb li img{
-    width: 90px;
-    height: 50px;
-  }
-  .thumb li .imgSlider{
-    width: 500px;
-    height: 400px;
-    }
+.col-img{
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+}
+.col-img img{
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
+  margin: 0px auto;
+  width: 100%;
+}
+.col-text{
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 30px;
+  width: 550px;
+}
+.col-text h1{
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.col-text p{
+  font-weight: 200;
+  font-size: 14px;
+  width: 550px;
+}
   /* previous and next */
   .prenext a{
     text-decoration: none;
@@ -309,276 +291,38 @@
 
   /* responsive */
   
-  @media (max-width:1200px){
-      .content .text {
-        width: 480px;
-        margin-left: 12%;
+  @media (max-width:1050px){
+    .col-text p{
+      width: 500px;
+    }
   }
-  .thumb {
-    left: 50%;
-    bottom: 10%;
-    top: 65%;
-}
+
+  @media (max-width:992px){
+    .row, .row-local {
+      flex-wrap: wrap;
+    }
+    .col-text{
+      padding-left: 20px;
+      margin: 0px 0px;
+    }
   }
-  @media (max-width:1150px){
-    .content .text {
-      width: 450px;
-      margin-left: 12%;
-}
-.thumb {
-  left: 50%;
-  bottom: 10%;
-  top: 65%;
-}
-}
-  @media (max-width:1100px){
-    .content .text {
-      width: 420px;
-      margin-left: 12%;
-}
-.thumb {
-  left: 53%;
-  bottom: 10%;
-  top: 65%;
-}
+
+  @media (max-width:768px){
+    .col-text,.col-text p{
+      width: 500px;
+      padding-left: 0px;
+    }
   }
   
-  @media (max-width:1050px){
-    .content .text {
-      width: 400px;
-      margin-left: 12%;
-}
-.thumb {
-  left: 53%;
-  bottom: 10%;
-  top: 65%;
-}
-  }
-
-  @media (max-width:1000px){
-    .content .text {
-      width: 380px;
-      margin-left: 12%;
-}
-.content .img img {
-  width: 450px;
-  height: 300px;
-}
-  }
-
-  @media (max-width:900px){
-    .content .text {
-      width: 380px;
-      margin-left: 5%;
-}
-.content .img img {
-  width: 400px;
-  height: 300px;
-  margin-left: -5%;
-}
-.thumb {
-  left: 53%;
-  bottom: 10%;
-  top: 62%;
-}
-  }
-
-  @media (max-width:850px){
-    .content{
-    display: grid;
-    grid-template-columns: repeat(1,0fr);
-    margin: 10% 0% 0% 20%;
-    }
-    .content .text {
-      width: 500px;
-      margin-left: 0%;
-      margin-top: 25%;
-      margin-bottom: 5%;
-}
-.content .img img {
-  width: 500px;
-  height: 300px;
-  margin-left: 0%;
-
-}
-.thumb {
-  left: 50%;
-  bottom: 10%;
-  top: 62%;
-}
-  }
-
-  @media (max-width:700px){
-    .content{
-    display: grid;
-    grid-template-columns: repeat(1,0fr);
-    margin: 10% 0% 0% 13%;
-    }
-.thumb {
-  left: 50%;
-  bottom: 10%;
-  top: 75%;
-}
-  }
-
-  @media (max-width:600px){
-    .content{
-    display: grid;
-    grid-template-columns: repeat(1,0fr);
-    margin: 10% 0% 0% 8%;
+  @media (max-width:576px){
+    .col-text,.col-text p{
+      width: 450px;
     }
   }
 
-  @media (max-width:550px){
-    .content{
-    display: grid;
-    grid-template-columns: repeat(1,0fr);
-    margin: 10% 0% 0% 5%;
+  @media (max-width:496px){
+    .col-text,.col-text p{
+      width: 90%;
     }
-    .content .text {
-      width: 480px;
-      margin-left: 5%;
-}
-.content .img img {
-  width: 480px;
-  height: 300px;
-  margin-left: 0%;
-
-}
-.thumb {
-  left: 48%;
-}
-  }
-
-  @media (max-width:500px){
-    .content{
-    display: grid;
-    grid-template-columns: repeat(1,0fr);
-    margin: 10% 0% 0% 5%;
-    }
-    .content .text {
-      width: 470px;
-      margin-left: 0%;
-      margin-top: 30%;
-}
-.content .img img {
-  width: 450px;
-  height: 290px;
-  margin-left: 0%;
-
-}
-.thumb {
-  left: 50%;
-}
-.prenext a {
-  width: 30%;
-}
-  }
-
-  @media (max-width:450px){
-    .content{
-    display: grid;
-    grid-template-columns: repeat(1,0fr);
-    margin: 10% 0% 0% 5%;
-    }
-    .content .text {
-      width: 400px;
-      margin-left: 0%;
-      margin-top: 30%;
-}
-.content .img img {
-  width: 400px;
-  height: 280px;
-  margin-left: 0%;
-
-}
-.thumb {
-  left: 50%;
-  top: 55%;
-}
-.prenext a {
-  width: 35%;
-}
-  }
-
-  @media (max-width:400px){
-    .content{
-    display: grid;
-    grid-template-columns: repeat(1,0fr);
-    margin: 10% 0% 0% 5%;
-    }
-    .content .text {
-      width: 380px;
-      margin-left: 0%;
-      margin-top: 40%;
-}
-.content .img img {
-  width: 360px;
-  height: 260px;
-  margin-left: 0%;
-
-}
-.thumb {
-  left: 50%;
-  top: 55%;
-}
-  }
-
-
-  @media (max-width:350px){
-    .content{
-    display: grid;
-    grid-template-columns: repeat(1,0fr);
-    margin: 10% 0% 0% 2%;
-    }
-    .content .text {
-      width: 300px;
-      margin-left: 5%;
-      margin-top: 40%;
-}
-.content .img img {
-  width: 320px;
-  height: 220px;
-  margin-left: 3%;
-
-}
-.thumb {
-  left: 53%;
-  top: 50%;
-}
-.prenext a {
-  width: 35%;
-}
-.thumb li {
-  margin: 0 13px;
-}
-  }
-
-  @media (max-width:300px){
-    .content{
-    display: grid;
-    grid-template-columns: repeat(1,0fr);
-    margin: 10% 0% 0% 2%;
-    }
-    .content .text {
-      width: 280px;
-      margin-left: 5%;
-      margin-top: 40%;
-}
-.content .img img {
-  width: 300px;
-  height: 200px;
-  margin-left: 3%;
-
-}
-.thumb {
-  left: 53%;
-  top: 45%;
-}
-.prenext a {
-  width: 35%;
-}
-.thumb li {
-  margin: 0 10px;
-}
+    
   }
