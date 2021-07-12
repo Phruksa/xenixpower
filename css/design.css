@@ -269,7 +269,7 @@
     margin: 0px 30px;
     width: 550px;
 }
-  .col-text h1{
+  .col-text h1 ,.col-text-reverse h1{
   margin-bottom: 20px;
   font-weight: 500;
   width: 550px;
@@ -444,12 +444,8 @@
 /* responsive */
 
 @media (max-width:1050px){
-  .col-text h1{
-    font-size: 3em;
-    width: 500px;
-  }
   .col-text,.col-text p, .col-text-reverse p{
-    width: 500px;
+    width: 580px;
   }
 }
 
@@ -457,31 +453,18 @@
   .row, .row-local {
     flex-wrap: wrap;
   }
-  .col-video{
+  .col-video, .col-video-reverse{
     margin: 50px auto;
   }
-  .col-text,.col-text p , .col-text h1{
+  .col-text-reverse,.col-text,.col-text p , .col-text h1{
+    padding-left: 0px;
     margin: 0px auto;
-  }
-  .col-text h1{
-    font-size: 2.8em;
-    margin-bottom: 20px;
-  }
-  .col-text-reverse{
-    padding-left: 20px;
-    margin: 0px 0px;
   }
 }
 
 @media (max-width:768px){
   .col-text,.col-text p,.col-text h1{
-    width: 80%;
-  }
-  .col-text h1{
-    font-size: 2.5em;
-  }
-  .col-video{
-    margin: 50px auto;
+    width: 500px;
   }
   .col-text-reverse,.col-text-reverse p{
     width: 500px;
@@ -490,15 +473,12 @@
 }
 
 @media (max-width:576px){
-  .col-text h1{
-    font-size: 2.3em;
-  } 
-  .col-text-reverse,.col-text-reverse p{
+  .col-text,.col-text p,.col-text-reverse,.col-text-reverse p{
     width: 450px;
   }
 }
 @media (max-width:496px){
-  .col-text-reverse,.col-text-reverse p{
+  .col-text,.col-text p,.col-text-reverse,.col-text-reverse p{
     width: 90%;
   }
 }
