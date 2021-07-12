@@ -294,6 +294,48 @@
     margin-top: 10px;
   }
  
+
+/********************** main ************************/
+  .col-video-reverse{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+  }
+  .col-video-reverse video{
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+    margin: 0px auto;
+    width: 100%;
+  }
+  .col-text-reverse{
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 30px;
+    width: 550px;
+  }
+  .col-text-reverse p{
+    font-weight: 200;
+    font-size: 14px;
+    width: 550px;
+  }
+ .col-text-reverse h1{
+    color: #333;
+    font-size: 3.2em;
+    line-height: 1.4em;
+    font-weight: 500;
+  }
+  .col-text-reverse h1 span{
+    color: #b31409;
+    font-size: 1em;
+    font-weight: 900;
+  }
+  .ccol-text-reverse  p{
+    color: #272f43;
+    margin-top: 10px;
+  }
   /********************** back-top ************************/
 #back-top {
     position: fixed;
@@ -427,7 +469,7 @@
     font-size: 3em;
     width: 500px;
   }
-  .col-text,.col-text p{
+  .col-text,.col-text p, .col-text-reverse p{
     width: 500px;
   }
 }
@@ -446,6 +488,10 @@
     font-size: 2.8em;
     margin-bottom: 20px;
   }
+  .col-text-reverse{
+    padding-left: 20px;
+    margin: 0px 0px;
+  }
 }
 
 @media (max-width:768px){
@@ -458,10 +504,22 @@
   .col-video{
     margin: 50px auto;
   }
+  .col-text-reverse,.col-text-reverse p{
+    width: 500px;
+    padding-left: 0px;
+  }
 }
 
 @media (max-width:576px){
   .col-text h1{
     font-size: 2.3em;
   } 
+  .col-text-reverse,.col-text-reverse p{
+    width: 450px;
+  }
+}
+@media (max-width:496px){
+  .col-text-reverse,.col-text-reverse p{
+    width: 90%;
+  }
 }
