@@ -154,7 +154,7 @@
 .col-img{
   display: flex;
   flex-direction: row;
-  padding: 30px;
+  padding: 0px;
 }
 .col-img img{
   flex: none;
@@ -180,7 +180,8 @@
   font-size: 14px;
   width: 550px;
 }
-  /* previous and next */
+
+/********************** previous and next ************************/
   .prenext a{
     text-decoration: none;
     display: inline-block;
@@ -313,7 +314,7 @@
       padding-left: 0px;
     }
   }
-  
+
   @media (max-width:576px){
     .col-text,.col-text p{
       width: 450px;

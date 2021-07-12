@@ -249,6 +249,8 @@ h6{
   from {opacity: .4}
   to {opacity: 1}
 }
+
+
 @media (max-width: 946px){
     .nav{
         padding: 1rem 1rem;
