@@ -4,28 +4,51 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
   }
-a{
+  
+  *, ::after, ::before {
+    box-sizing: border-box;
+  }
+  
+  a{
     text-decoration: none;
-}
-li{
+  }
+  li{
     list-style: none;
-}
-h3{
+  }
+  h1{
+    font-size: 36px;
+    font-weight: 600;
+  }
+  h2{
+    font-weight: 600;
+    font-size: 14px;
+  }
+  h3{
     font-size: 44px;
     line-height: 55px;
     color: #121212;
     font-weight: 600;
-}
-h6{
-    font-size: 20px;
-    line-height: 32px;
-    color: #6c6c6c;
-    margin-top: 16px;
-    font-weight: normal;
-}
-
-/********************** nav ************************/
-.nav{
+  }
+  h4{
+    text-align: left;
+    font-weight: 300;
+    margin:0 0 30px 0;
+  }
+  h5{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px
+  }
+  h6{
+    text-align: left;
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  /********************** nav ************************/
+  .nav{
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -36,18 +59,18 @@ h6{
     background: transparent;
     transition: all 0.5s ease;
     z-index: 100000;
-}
-.nav.scrolled{
+  }
+  .nav.scrolled{
     background-color: #fff !important;
     transition: background-color 200ms linear;
     box-sizing: 7px 10px 15px rgba(0,0,0,0.3);
-}
-.nav .navbar-toggler{
+  }
+  .nav .navbar-toggler{
     display: none;
     border: none;
     outline: none;
-}
-.nav .navbar-toggler .toggler-icon{
+  }
+  .nav .navbar-toggler .toggler-icon{
     width: 27px;
     height: 3px;
     background-color: #121212;
@@ -55,54 +78,75 @@ h6{
     position: relative;
     display: block;
     transition: all 0.3s ease-out 0s;
-}
-.nav .menu-bar .menu-item{
+  }
+  .nav .menu-bar .menu-item{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-.nav .menu-bar .menu-item li{
+  }
+  .nav .menu-bar .menu-item li{
     margin: 0 15px;
-}
-.nav .menu-bar .menu-item li a{
+  }
+  .nav .menu-bar .menu-item li a{
     color: #000;
     font-size: 14px;
     font-weight: 500;
-}
-.nav .menu-bar .menu-item li a:hover{
+  }
+  .nav .menu-bar .menu-item li a:hover{
     color: #a80000;
-}
-
-
-/********************** head-shape ************************/
-.back{
+  }
+  
+  /********************** head-shape ************************/
+  .back .overlay{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.733), rgba(180, 180, 180, 0.7),rgba(26, 26, 27, 0.7)),
+                url(../imgproduct/rw2.jpg);
     width: 100%;
-    height: 10vh;
+    height: 100%;
+  }
+  .back{
+    width: 100%;
+    height: 100vh;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-}
-.back .overlay{
-    width: 100%;
-    height: 100%;
-}
-.back .hero-shape{
+  }
+  .back .hero-shape{
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-}
-.back .hero-shape img{
+  }
+  .back .hero-shape img{
     width: 100%;
     display: block;
-}
-@media (max-width: 946px){
+  }
+  .hero-text{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    text-align: center;
+  }
+  .hero-text h6{
+    color: #1d1d1d;
+    text-align: center;
+    font-weight: 400;
+  }
+  
+  
+  @media (max-width: 946px){
     .nav{
         padding: 1rem 1rem;
     }
-}
-@media (max-width: 774px){
+    .hero-text{
+      width: 60%;
+    }
+    .hero-text h3{
+      font-size: 33px;
+    }
+  }
+  @media (max-width: 774px){
     .nav{
         padding: 0.7rem 1rem;
     }
@@ -134,62 +178,87 @@ h6{
     .nav .menu-bar .menu-item li{
         margin: 2rem 30px;
     }
-}
-
-
-/********************** mainservice ************************/
-main{
-    margin-top: 3rem;
-    margin-bottom: 6rem;
-} 
-.main{
-    text-align: center;
-    margin-top: 3rem;
-}
-.main h2{
-    padding: 5px;
-    font-size: 30px;
-}
-.main .textser{
-    padding: 5px;
-    font-size: 12px;
-    width: 500px;
-    margin-left: 30%;
-}
-.dataserver{
-    margin-top: 5rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 80px;
-    grid-column-gap: 10rem;
-    margin-left: 17rem;
-}
-.dataserver .databox1,.dataserver .databox2,.dataserver .databox3,.dataserver .databox4{
-    width: 200px;
-    color: #ff0000;
-}
-.dataserver .databox1 p,.dataserver .databox2 p,.dataserver .databox3 p,.dataserver .databox4 p{
-    font-size: 12px;
-    color: black;
-}
-.dataserver img{
-    width: 45px;
-    height: 45px;
-}
-.img img{
-    position: absolute;
-    height: 450px;
-    margin-left: 31%;
-    z-index: -2;
-}
-
-
-
-/********************** footer ************************/
-h2{
-    font-weight: 600;
-    font-size: 17px;
+    .hero-text{
+      top: 0%;
+    }
   }
+  
+  @media (max-width: 541px){
+    .hero-text{
+      width: 100%;
+      top: 10%;
+    }
+    .hero-text h3{
+        font-size: 28px;
+        line-height: 45px;
+    }
+    .col-md-6 img{
+      width: 100%;
+    }
+  }
+  /* nav */
+  
+
+  
+  /********************** back-top ************************/
+#back-top {
+    position: fixed;
+    bottom: 15px;
+    /*margin-left: -150px;*/
+    right: 20px;
+  }
+  
+  #back-top a {
+    /*width: 60px;*/
+    display: block;
+    text-align: center;
+    font: 11px/100% Arial, Helvetica, sans-serif;
+    /*text-transform: uppercase;*/
+    text-decoration: none;
+    color: black;
+    font-weight:bold;
+    opacity: 0.9;
+  
+    /* transition */
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+  }
+  #back-top a:hover {
+    color: #000;
+  }
+  
+  /* arrow icon (span tag) */
+  #back-top span {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-bottom: 7px;
+  margin-left: 5px;
+    background: #ddd url(up-arrow.png) no-repeat center center;
+  
+    /* rounded corners */
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+  
+    /* transition */
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+  }
+  #back-top a:hover span {
+    background-color: #3d3d3d;
+  }
+  #back-top img{
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  }
+  
+  
+  /********************** footer ************************/
+  
   footer{
     display: -webkit-flex;
     display: -moz-flex;
@@ -256,95 +325,5 @@ h2{
     .footer-right{
         flex: 2 0px;
     }
-    .row{
-      display: grid;
-      grid-row: inherit;
   }
-  }
-
-
-/********************** responsive ************************/
-
-  @media (max-width:1100px){
-    .main .textser{
-        width: 500px;
-        margin-left: 25%;
-    }
-    .dataserver{
-        grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 80px;
-        grid-column-gap: 8rem;
-        margin-left: 10rem;
-    }
-    .img img{
-        margin-left: 25%;
-    }
-  }
-  @media (max-width:1000px){
-    .main .textser{
-        width: 500px;
-        margin-left: 20%;
-    }
-    .dataserver{
-        grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 80px;
-        grid-column-gap: 8rem;
-        margin-left: 10rem;
-    }
-    .img img{
-        margin-left: 25%;
-    }
-  }
-  @media (max-width:900px){
-    .main .textser{
-        width: 500px;
-        margin-left: 20%;
-    }
-    .dataserver{
-        grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 80px;
-        grid-column-gap: 8rem;
-        margin-left: 10rem;
-    }
-    .img img{
-        margin-left: 25%;
-    }
-  }
-
-  @media (max-width:800px){
-    .main .textser{
-        width: 500px;
-        margin-left: 20%;
-    }
-    .dataserver{
-        grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 80px;
-        grid-column-gap: 8rem;
-        margin-left: 6rem;
-    }
-    .dataserver .databox1,.dataserver .databox2,.dataserver .databox3,.dataserver .databox4{
-        width: 200px;
-    }
-    .img img{
-        margin-left: 20%;
-    }
-  }
-
-  @media (max-width:720px){
-    .main .textser{
-        width: 500px;
-        margin-left: 15%;
-    }
-    .dataserver{
-        grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 80px;
-        grid-column-gap: 8rem;
-        margin-left: 5rem;
-    }
-    .dataserver .databox1,.dataserver .databox2,.dataserver .databox3,.dataserver .databox4{
-        width: 200px;
-    }
-    .img img{
-        margin-left: 10%;
-    }
-  }
+  
