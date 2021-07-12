@@ -207,8 +207,8 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    font-size: 36px;
-    font-weight: 600;
+    font-size: 46px;
+    font-weight: 700;
   }
   .textbox p{
     margin-left: auto;
@@ -244,14 +244,16 @@
   justify-content: center;
   align-items: center;
   padding: 0px;
-  margin-top: 50px;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
   }
   
   .col-video{
   display: flex;
   flex-direction: row;
   padding: 0px;
-  margin-right: 0px;
+  margin-right: 30px;
+  margin-left: 20px;
   }
   .col-video video{
   flex: none;
@@ -272,24 +274,17 @@
   font-weight: 500;
   width: 550px;
   }
-  .col-text p{
+  .col-text p,  .col-text-reverse p{
   font-weight: 200;
   font-size: 14px;
   width: 550px;
   }
-  
-  .col-text h1{
-    color: #333;
-    font-size: 3.2em;
-    line-height: 1.4em;
-    font-weight: 500;
-  }
-  .col-text h1 span{
+  .col-text h1 span, .col-text-reverse h1 span{
     color: #b31409;
-    font-size: 1em;
-    font-weight: 900;
+    font-size: 1.5em;
+    font-weight: 600;
   }
-  .col-text  p{
+  .col-text  p,  .col-text-reverse p{
     color: #272f43;
     margin-top: 10px;
   }
@@ -300,6 +295,8 @@
     display: flex;
     flex-direction: row;
     padding: 0px;
+    margin-right: 20px;
+    margin-left: 30px;
   }
   .col-video-reverse video{
     flex: none;
@@ -316,26 +313,8 @@
     margin: 0px 30px;
     width: 550px;
   }
-  .col-text-reverse p{
-    font-weight: 200;
-    font-size: 14px;
-    width: 550px;
-  }
- .col-text-reverse h1{
-    color: #333;
-    font-size: 3.2em;
-    line-height: 1.4em;
-    font-weight: 500;
-  }
-  .col-text-reverse h1 span{
-    color: #b31409;
-    font-size: 1em;
-    font-weight: 900;
-  }
-  .ccol-text-reverse  p{
-    color: #272f43;
-    margin-top: 10px;
-  }
+
+  
   /********************** back-top ************************/
 #back-top {
     position: fixed;
