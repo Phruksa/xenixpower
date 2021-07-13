@@ -206,6 +206,25 @@ h6{
   width: 550px;
 }
 
+
+/* localrailway */
+.localrailway{
+  width: 100%;
+  background-image: linear-gradient(rgba(143, 143, 143, 0.7),rgba(88, 87, 87, 0.7), rgba(61, 61, 61, 0.7)),
+    url(https://www.tuvsud.com/hu-hu/-/media/global/images/industries/infrastructure-and-rail/rail/istock-698673380-complete-railway-system.jpg?pid=fe97b8ad-d039-4523-b3d0-c7e93906f2e0);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: .5s ease;
+    color: white;
+    margin: 2em 0em;
+    height: 120px;
+}
+.col-img h1{
+  font-size: 30px;
+  font-weight: 500;
+}
+
 /********************** previous and next ************************/
   .prenext a{
     text-decoration: none;
