@@ -456,17 +456,14 @@
   .col-video, .col-video-reverse{
     margin: 50px auto;
   }
-  .col-text-reverse,.col-text,.col-text p , .col-text h1{
+  .col-text-reverse,.col-text{
     padding-left: 0px;
     margin: 0px auto;
   }
 }
 
 @media (max-width:768px){
-  .col-text,.col-text p,.col-text h1{
-    width: 500px;
-  }
-  .col-text-reverse,.col-text-reverse p{
+  .col-text-reverse,.col-text-reverse p,.col-text,.col-text p,.col-text h1{
     width: 500px;
     padding-left: 0px;
   }
@@ -480,5 +477,8 @@
 @media (max-width:496px){
   .col-text,.col-text p,.col-text-reverse,.col-text-reverse p{
     width: 90%;
+  }
+  .col-text{
+    margin-left: 10px;
   }
 }
