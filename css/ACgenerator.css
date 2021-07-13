@@ -140,6 +140,23 @@ h6{
 }
 
 
+/* localrailway */
+.localrailway{
+  width: 100%;
+  background-image: linear-gradient(rgba(143, 143, 143, 0.7),rgba(88, 87, 87, 0.7), rgba(61, 61, 61, 0.7)),
+    url(../imgproduct/Picture1.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: .5s ease;
+    color: white;
+    margin: 2em 0em;
+    height: 120px;
+}
+.col-img h1{
+  font-size: 30px;
+  font-weight: 500;
+}
 
 /********************** main ************************/
 .row-local{
@@ -148,14 +165,14 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
 padding: 0px;
-margin-top: 100px;
+margin-top: 50px;
 }
 
 .col-img{
 display: flex;
 flex-direction: row;
 padding: 0px;
-margin-right: 50px;
+margin: 0px 50px 0 112px;
 }
 .col-img img{
 flex: none;
@@ -198,6 +215,8 @@ width: 80%;
   color: #333;
   margin-top: 10px;
 }
+
+
 
 /********************** previous and next ************************/
 .prenext a{
