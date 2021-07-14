@@ -143,6 +143,9 @@ li {
     display: block;
     padding: .5rem 1rem;
 }
+.nav-link:hover{
+  display: block;
+}
 .navbar-nav .nav-link {
     padding-right: 0;
     padding-left: 0;
