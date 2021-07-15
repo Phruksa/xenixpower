@@ -29,7 +29,9 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: .5rem 1rem;
-    background: white;
+    /* background: white; */
+    transition:  all 0.5s ease;
+    z-index: 100000;
 }
 .navbar-brand{
     padding: 0px 50px 0px;
@@ -168,6 +170,7 @@ a:-webkit-any-link:hover {
   top: 0;
   z-index: 100;
   box-shadow: 0px 1px 10px rgba(0,0,0,0,4);
+  transition: backgroung-color 200ms linear;
 }
 .navbar-toggler:hover {
     cursor: pointer;
