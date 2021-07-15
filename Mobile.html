@@ -7,31 +7,86 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/Genarator.css">
+        <link rel="stylesheet" type="text/css" href="css/nav.css">
+        <style>
+            .localrailway{
+                width: 100%;
+                background-image: linear-gradient(rgba(143, 143, 143, 0.7),rgba(88, 87, 87, 0.7), rgba(61, 61, 61, 0.7)),
+                url(images/Picture2.png);
+            }
+        </style>
+        
     </head>
     <body>
-        <!-- ********************** nav ************************ -->
-        <div class="nav">
-            <a class="logo" href="home.html">
-                <img src="images/logo.png" width="170px">
-            </a>
+            <!-- ********************** nav ************************ -->
+            <header class="header">
+                <div class="header-inner">
+                    <div class="container-fluid px-lg-5">
+                        <nav class="navbar navbar-expand-lg my-navbar">
+                            <a class="navbar-brand" href="#">
+                            <img src="images/logo.png" class="img-fluid" style="width:170px; margin:-3px 0px 0px 0px;"></span>
+                            </a>
+                            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"><i class="fas fa-bars" style="margin:5px 0px 0px 0px;"></i></span>
+                            </button>
+                        
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav m-auto">
+                                <li class="nav-item active">
+                                <a class="nav-link" href="#">ABOUT</a>
+                                </li>
 
-            <div class="navbar-toggler" type="button" id="bar">
-                <span class="toggler-icon"></span>
-                <span class="toggler-icon"></span>
-                <span class="toggler-icon"></span>
-            </div>
-            
-            <div class="menu-bar" id="navbar">
-                <ul class="menu-item">
-                    <li><a href="about.html">ABOUT </a></li>
-                    <li><a href="product.html">PRODUCTS</a></li>
-                    <li><a href="partner.html">PARTNER</a></li>
-                    <li><a href="service.html">SERVICE</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </div>
+                                <!-- SERVICE -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    SERVICE
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">DESIGN</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">MANUFACTURE</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">INSTALLATION</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">TEST & COMMISSIONING</a>
+                                </div>
+                                </li>
 
-        </div>
+                                <!-- SOLUTION -->
+                                <li class="nav-item dropdown">
+                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                SOLUTION
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">RAILWAY ENGINEERING</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">ELECTRICAL POWER SYSTEM</a>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                PRODUCTS
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">RAILWAY ENGINEERING</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">ELECTRICAL POWER SYSTEM</a>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">PARTNER</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">CONTACT</a>
+                                </li>
+                            </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
         <!-- ********************** head-shape ************************ -->
         <div class="back" id="home">
             <div class="overlay"></div>
@@ -43,7 +98,8 @@
                 <div class="container-local">
                     <div class="row-local localrailway">
                         <div class="col-img">
-                            <h1>Electrical Power System</h1>
+                            <a href="Products.html" class="text1"><h1>Products&nbsp;<span> > </span>&nbsp;</h1></a></i>
+                            <a href="Electrical.html" class="text2"><h1>Electrical Power System</h1></a>
                         </div>
                         <div class="col-text">
                             <p class="local-text-box"></p>
@@ -54,7 +110,7 @@
 
                     <div class="row-local">
                         <div class="col-img">
-                            <img src="imgproduct/67364.jpg" class="levelcrossing">
+                            <img src="imgproduct/customer.png" class="levelcrossing">
                         </div>
                         <div class="col-text">
                             <h1>Mobile Generator</h1>
@@ -77,48 +133,66 @@
 
         </script>
 
-  <!-- footer -->
-  <footer class="footer">
-    <div class="footer-left">
-        <img class="footer-logo" src="images/logo.png" alt="">
-        <img class="footer-socotec" src="images/Socotec-9001.png" alt="">
-
-    </div>
-    <ul class="footer-right">
-        <li>
-            <h2>Home</h2>
-
-            <ul class="box">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Partner</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </li>
-        <li class="feature">
-            <h2>Product</h2>
-            <ul class="box">
-                <li><a href="#">Electrical Power System</a></li>
-                <li><a href="#">Railway Engineering</a></li>
-            </ul>
-        </li>
-        <li>
-            <h2>Address</h2>
-            <ul class="box">
-                <li><a>23 Moo. 3 </a></li>
-                <li><a>Phutthamonthon 5 Road.</a></li>
-                <li><a>Kratumlom Sampran </a></li>
-                <li><a>Nakhonpathom 73220,</a></li>
-                <li><a>Thailand</a></li>
-            </ul>
-        </li>
-    </ul>
-    <div class="footer-bottom">
-        <p>&copy; xenix electech co. ltd </p>
-    </div>
-</footer>
-
+        <!---------------- nav js ----------------->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
-        <script src="script/nav.js"></script>
+        <script src="js/script.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script type="text/javascript">
+            $(function(){
+              var navbar = $('.header-inner');
+              $(window).scroll(function(){
+                if($(window).scrollTop() <=40){
+                  navbar.removeClass('navbar-scroll');
+                }else{
+                  navbar.addClass('navbar-scroll');
+                }
+              });
+            });
+          </script>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer-left">
+                <img class="footer-logo" src="images/logo4.png" alt=""><br>
+                <img class="footer-socotec" src="images/Socotec-9001.png" alt="">
+
+            </div>
+            <ul class="footer-right">
+                <li>
+                    <h2>Home</h2>
+
+                    <ul class="box">
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="partner.html">Partner</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </li>
+                <li class="feature">
+                    <h2>Product</h2>
+                    <ul class="box">
+                        <li><a href="elec-product.html">Electrical Power System</a></li>
+                        <li><a href="railway-product.html">Railway Engineering</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Address</h2>
+                    <ul class="box">
+                        <li><a>23 Moo. 3 </a></li>
+                        <li><a>Phutthamonthon 5 Road.</a></li>
+                        <li><a>Kratumlom Sampran </a></li>
+                        <li><a>Nakhonpathom 73220,</a></li>
+                        <li><a>Thailand</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="footer-bottom">
+                <p>Copyright &copy; xenix electech Ltd. All right reserved.</p>
+            </div>
+        </footer>
     </body>
 </html>
