@@ -5,10 +5,10 @@
         <title>Railway Engineering | Xenix Electech Ltd.</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/Railway.css">
+        <link rel="stylesheet" href="css/nav.css">
         <link rel="icon" href="images/mini-logo.png" type="image/png" sizes="16x16">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     </head>
     <body>
@@ -329,6 +329,25 @@
                     });
                 });
                 </script>
+
+                
+         <!-- nav -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script type="text/javascript">
+            $(function(){
+            var navbar = $('.header-inner');
+            $(window).scroll(function(){
+                if($(window).scrollTop() <=40){
+                navbar.removeClass('navbar-scroll');
+                }else{
+                navbar.addClass('navbar-scroll');
+                }
+            });
+            });
+        </script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
     <script src="script/nav.js"></script>
