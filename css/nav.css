@@ -9,7 +9,7 @@
     left: 0;
     width: 100%;
     z-index: 100;
-    background-color: transparent;
+    background-color: white;
 }
 .container-fluid {
     width: 100%;
@@ -32,7 +32,6 @@
 }
 
 a {
-    color: #007bff;
     text-decoration: none;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
@@ -299,3 +298,98 @@ button {
         position: absolute;
     }
 }
+
+
+
+ /********************** head-shape ************************/
+  .banner{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding: 0 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #111;
+  }
+  .banner:before{
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 400px;
+      height: 100%;
+      background: rgba(0,0,0,0,5);
+
+  }
+  .banner video{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.1;
+      pointer-events: none;
+  }
+  .banner .hero-text{
+      position: relative;
+      max-width: 550px;
+      z-index: 2;
+  }
+  .banner .hero-text h3{
+      color: white;
+      font-size: 3em;
+  }
+  .banner .hero-text h6{
+      font-size: 1.1em;
+      color: white;
+      margin: 5px 0 25px;
+  }
+  .banner .hero-text a{
+      position: relative;
+      display: inline-block;
+      background: #fff;
+      color: #111;
+      padding: 15px 25px;
+      text-decoration: none;
+      font-size: 1.1em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 500;
+  }
+
+  .banner .video{
+      position: relative;
+      background: #fff;
+      margin-left: 40px;
+      width: 100%;
+      height: 400px;
+      z-index: 1;
+  }
+  .banner .video video{
+      opacity: 1;
+  }
+
+  @media(max-width:991px){
+      .banner{
+          padding: 150px 50px 0;
+          flex-direction: column;
+      }
+      .banner:before{
+          display: none;
+      }
+      .banner .hero-text{
+          max-width: 100%;
+      }
+      .banner .hero-text h3{
+          font-size: 2.5em;
+      }
+      .banner .video{
+          width: 100%;
+          height: 200px;
+          margin: 40px 0 50px;
+      }
+  }

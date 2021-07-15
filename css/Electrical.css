@@ -81,7 +81,6 @@
 }
 
 a {
-    color: #007bff;
     text-decoration: none;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
@@ -349,68 +348,99 @@ button {
     }
 }
   
-  /********************** head-shape ************************/
-  .back .overlay{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.733), rgba(180, 180, 180, 0.7),rgba(26, 26, 27, 0.7)),
-                url(../imgproduct/67364.jpg);
-    width: 100%;
-    height: 100%;
-  }
-  .back{
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-  }
-  .back .hero-shape{
+ /********************** head-shape ************************/
+ .banner{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  padding: 0 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #111;
+}
+.banner:before{
+    content: '';
     position: absolute;
-    bottom: 0;
+    right: 0;
+    top: 0;
+    width: 400px;
+    height: 100%;
+    background: rgba(0,0,0,0,5);
+
+}
+.banner video{
+    position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
-  }
-  .back .hero-shape img{
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1;
+    pointer-events: none;
+}
+.banner .hero-text{
+    position: relative;
+    max-width: 550px;
+    z-index: 2;
+}
+.banner .hero-text h3{
+    color: white;
+    font-size: 3em;
+}
+.banner .hero-text h6{
+    font-size: 1.1em;
+    color: white;
+    margin: 5px 0 25px;
+}
+.banner .hero-text a{
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    color: #111;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.banner .video{
+    position: relative;
+    background: #fff;
+    margin-left: 40px;
     width: 100%;
-    display: block;
-  }
-  .hero-text{
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%,50%);
-    text-align: center;
-  }
-  .hero-text h6{
-    color: #1d1d1d;
-    text-align: center;
-    font-weight: 400;
-  }
-  
-  
-  @media (max-width: 946px){
-    .hero-text{
-      width: 60%;
+    height: 400px;
+    z-index: 1;
+}
+.banner .video video{
+    opacity: 1;
+}
+
+@media(max-width:991px){
+    .banner{
+        padding: 150px 50px 0;
+        flex-direction: column;
+        height: 120vh;
     }
-    .hero-text h3{
-      font-size: 33px;
+    .banner:before{
+        display: none;
     }
-  }
-  @media (max-width: 774px){
-    .hero-text{
-      top: 0%;
+    .banner .hero-text{
+        max-width: 100%;
     }
-  }
-  
-  @media (max-width: 541px){
-    .hero-text{
-      width: 100%;
-      top: 10%;
+    .banner .hero-text h3{
+        font-size: 2.5em;
     }
-    .hero-text h3{
-        font-size: 28px;
-        line-height: 45px;
+    .banner .video{
+        width: 100%;
+        height: 300px;
+        margin: 40px 0 50px;
     }
-  }
+}
   /* nav */
   
   
