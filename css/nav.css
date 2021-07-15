@@ -9,14 +9,14 @@
     left: 0;
     width: 100%;
     z-index: 100;
-    background-color: white;
+    background-color: transparent;
 }
 .container-fluid {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+  width: 100%;
+  /* padding-right: 15px; */
+  /* padding-left: 15px; */
+  margin-right: auto;
+  margin-left: auto;
 }
 .navbar {
     position: relative;
@@ -29,6 +29,7 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: .5rem 1rem;
+    background: white;
 }
 
 a {
@@ -73,7 +74,7 @@ dl, ol, ul {
 .m-auto {
     margin: auto!important;
 }
-li {
+li :hover {
     display: list-item;
     text-align: -webkit-match-parent;
 }
@@ -89,16 +90,15 @@ li {
 .nav-item .nav-link:hover {
     color: #FE4066;
 }
+.dropdown:hover .dropdown-menu 
+{display: block;}
+
 .nav-link {
     display: block;
     padding: .5rem 1rem;
 }
 .nav-link:hover{
   display: block;
-}
-.navbar-nav .nav-link {
-    padding-right: 0;
-    padding-left: 0;
 }
 .dropdown, .dropleft, .dropright, .dropup {
     position: relative;
@@ -159,9 +159,6 @@ a:-webkit-any-link:hover {
     overflow: hidden;
     border-top: 1px solid #e9ecef;
 }
-.dropdown-toggle:hover {
-   display: block;
-}
 .navbar-scroll{
   background-color: #fff;
   padding: 0;
@@ -170,7 +167,7 @@ a:-webkit-any-link:hover {
   z-index: 100;
   box-shadow: 0px 1px 10px rgba(0,0,0,0,4);
 }
-.navbar-toggler:not(:disabled):not(.disabled) {
+.navbar-toggler:hover {
     cursor: pointer;
 }
 .navbar-toggler:focus, .navbar-toggler:hover {
@@ -183,7 +180,7 @@ a:-webkit-any-link:hover {
     padding: .25rem .75rem;
     font-size: 1.25rem;
     line-height: 1;
-    background-color: transparent;
+    background-color: white;
     border: 1px solid transparent;
     border-radius: .25rem;
 }
@@ -211,7 +208,7 @@ button {
     text-transform: none;
     text-indent: 0px;
     text-shadow: none;
-    display: inline-block;
+    display: none;
     text-align: center;
     align-items: flex-start;
     cursor: default;
@@ -265,15 +262,18 @@ button {
         color: #000 !important;
         font-weight: 600 !important;
     }
+    button{
+        display: inline-block;
+    }
 }
 
 @media (min-width: 992px){
-    .pr-lg-5, .px-lg-5 {
-        padding-right: 3rem!important;
-    }
-    .pl-lg-5, .px-lg-5 {
-        padding-left: 3rem!important;
-    }
+  .pl-lg-5, .px-lg-5 {
+    padding-left: 0rem!important;
+}
+.pr-lg-5, .px-lg-5 {
+  padding-right: 0rem!important;
+}
     .navbar-expand-lg {
         -ms-flex-flow: row nowrap;
         flex-flow: row nowrap;
@@ -298,98 +298,3 @@ button {
         position: absolute;
     }
 }
-
-
-
- /********************** head-shape ************************/
-  .banner{
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    padding: 0 100px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background: #111;
-  }
-  .banner:before{
-      content: '';
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 400px;
-      height: 100%;
-      background: rgba(0,0,0,0,5);
-
-  }
-  .banner video{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: 0.1;
-      pointer-events: none;
-  }
-  .banner .hero-text{
-      position: relative;
-      max-width: 550px;
-      z-index: 2;
-  }
-  .banner .hero-text h3{
-      color: white;
-      font-size: 3em;
-  }
-  .banner .hero-text h6{
-      font-size: 1.1em;
-      color: white;
-      margin: 5px 0 25px;
-  }
-  .banner .hero-text a{
-      position: relative;
-      display: inline-block;
-      background: #fff;
-      color: #111;
-      padding: 15px 25px;
-      text-decoration: none;
-      font-size: 1.1em;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-weight: 500;
-  }
-
-  .banner .video{
-      position: relative;
-      background: #fff;
-      margin-left: 40px;
-      width: 100%;
-      height: 400px;
-      z-index: 1;
-  }
-  .banner .video video{
-      opacity: 1;
-  }
-
-  @media(max-width:991px){
-      .banner{
-          padding: 150px 50px 0;
-          flex-direction: column;
-      }
-      .banner:before{
-          display: none;
-      }
-      .banner .hero-text{
-          max-width: 100%;
-      }
-      .banner .hero-text h3{
-          font-size: 2.5em;
-      }
-      .banner .video{
-          width: 100%;
-          height: 200px;
-          margin: 40px 0 50px;
-      }
-  }
