@@ -48,11 +48,48 @@
     font-size: 18px;
   }
 
+    /********************** head-shape ************************/
+    .back{
+      width: 100%;
+      height: 50vh;
+      background-size: cover;
+      background-attachment: fixed;
+      position: relative;
+      background-image: linear-gradient(rgba(143, 143, 143, 0.7),rgba(88, 87, 87, 0.7), rgba(61, 61, 61, 0.7)),
+      url(../imgproduct/tc.jpg);
+    }
+    .back .overlay{
+      width: 100%;
+      height: 100%;
+    }
+    .overlay .ourproduct{
+      position: absolute;
+      top: 33%;
+      left: 20%;
+      transform: translate(-50%,50%);
+      text-align: center;
+      color: white;
+    }
+    .col-img{
+      display: flex;
+      flex-direction: row;
+      padding: 0px;
+      position: absolute;
+      top:55%;
+      left: 14%;
+      transform: translate(-50%,50%);
+      text-align: center;
+    }
+    .col-img a p{
+      color: white;
+      font-weight: 600;
+      font-size: 16px;
+    }
 
 
   /********************** main ************************/
   .py-80 {
-    padding-top: 120px;
+    padding-top: 5rem;
 }
 
 .container {
@@ -69,7 +106,7 @@
     align-items: center;
     padding: 0px;
     margin-top: 20px;
-
+    margin-bottom: 20px;
     }
 .text-box{
   text-align: center;
@@ -80,11 +117,11 @@
 .mb-3, .my-3 {
     margin-bottom: 1rem;
 }
-h2 {
-    font-size: 3em;
+.text-box h2 {
+    font-size: 2.8em;
     line-height: 45px;
 }
-p{
+.text-box p{
     padding-top: 10px;
 }
 video{
@@ -101,7 +138,6 @@ video{
 }
 
 .card {
-    top: 0;
     background: #fdfdfd;
     /* border: 2px solid #efeef3; */
     position: relative;
@@ -130,6 +166,10 @@ video{
 @media (max-width:992px){
     .row {
       flex-wrap: wrap;
+    }
+    .card{
+      margin-top: 20px;
+      margin-bottom: 10px;
     }
 }
 
