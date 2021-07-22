@@ -45,7 +45,7 @@ h6{
 }
 
 
-.showcase header{
+.showcase {
     position: absolute;
     top: 0;
     left: 0;
@@ -183,7 +183,7 @@ h6{
 }
 
 /* product */
-.container{
+.container-product{
     width: 100%;
     height: 130vh;
     background-image: linear-gradient(rgba(53, 53, 53, 0.7),
@@ -206,7 +206,7 @@ h6{
     
     flex-basis: 50%;
 }
-.col h1,p {
+.container-product .row .col h1,p {
     color: #fff;
     margin-bottom: 30px;
 }
