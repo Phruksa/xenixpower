@@ -176,6 +176,8 @@ h1{
  }
  .tm-2col-l, .tm-2col-r {
    width: 500px;
+   margin-top: 5rem;
+   margin-bottom: 2rem;
  }
  .tm-2col-l {
    padding-right: 40px;
