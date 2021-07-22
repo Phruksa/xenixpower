@@ -117,26 +117,18 @@ h1{
 /*--------------------*/
 
 
-#mu-about {
+.tm-section-2 {
 	background-color: #fff;
-	display: inline;
 	float: left;
 	width: 100%;
+  padding: 100px 0;
 }
-
-.mu-about-area {
+.row .col-md-6 .mu-about-left {
 	display: inline;
 	float: left;
-	padding: 100px 0;
-	width: 100%;
+	width: 40px;
 }
-
-.mu-about-left {
-	display: inline;
-	float: left;
-	width: 100px;
-}
-.mu-about-left img{
+.row .mu-about-left img{
   width: 100%;
 }
 .mu-about-right {
@@ -228,38 +220,7 @@ h1{
    padding-left: 40px;
  }
  
-  /* ********************** form ************************  */
- .row{
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
- }
- .col-xl-4{
-   margin-top: 5rem;
-   margin-bottom: 5rem;
-   width: 450px;
-   height: fit-content;
-   margin-left: auto;
-   padding-left: 40px;
-   padding-right: 40px;
-   margin-right: auto; 
- }
- .col-xl-4 h1{
-   font-size: 22px;
-   font-weight: 600;
-   padding-top: 30px;
- }
- .col-md-12 h1 {
-   padding-top: 0px;
- }
- .col-xl-4 p{
-   font-size: 12px;
-   padding-top: 20px;
- }
- .img-fluid{
-   width: 100%;
- }
- 
+
  
  
  @media screen and (max-width: 768px) {
