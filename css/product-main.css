@@ -1,6 +1,5 @@
-
 h1{
-  font-size: 27px;
+  font-size: 25px;
    font-weight: 600;
    padding-top: 30px;
  }
@@ -35,7 +34,7 @@ h1{
  /********************** head-shape ************************/
  .hero-text{
  position: absolute;
- top: 10%;
+ top: 15%;
  left: 50%;
  transform: translate(-50%,50%);
  text-align: center;
@@ -175,6 +174,9 @@ h1{
  .float-right {
    float: right;
  }
+ .tm-2col-l, .tm-2col-r {
+   width: 500px;
+ }
  .tm-2col-l {
    padding-right: 40px;
  }
@@ -187,34 +189,33 @@ h1{
    display: flex;
    flex-direction: row;
    justify-content: center;
-   align-items: center;
  }
  .col-xl-4{
    margin-top: 5rem;
    margin-bottom: 5rem;
-   width: 500px;
+   width: 450px;
    height: fit-content;
-   margin-left: 20px;
-   margin-right: 10px; 
- }
- .col-xl-4 .paddingtext{
-   padding-top: 45px;
+   margin-left: auto;
+   padding-left: 40px;
+   padding-right: 40px;
+   margin-right: auto; 
  }
  .col-xl-4 h1{
-   font-size: 27px;
+   font-size: 22px;
    font-weight: 600;
    padding-top: 30px;
  }
+ .col-md-12 h1 {
+   padding-top: 0px;
+ }
  .col-xl-4 p{
-   font-size: 14px;
+   font-size: 12px;
    padding-top: 20px;
  }
  .img-fluid{
    width: 100%;
  }
- .knowledge2{
-   padding-top: 20px;
- }
+ 
  
  
  @media screen and (max-width: 768px) {
@@ -246,11 +247,9 @@ h1{
      padding-left: 20px;
    }
    .col-xl-4{
-     margin-top: 2rem;
+     margin-top: 5rem;
+     padding-left: 0px;
      margin-bottom: 0rem;
-   }
-   .col-xl-4 .paddingtext{
-     padding-top: 30px;
    }
  }
  
