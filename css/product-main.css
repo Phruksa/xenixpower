@@ -117,37 +117,60 @@ h1{
 /*--------------------*/
 
 
-.tm-section-2 {
-	background-color: #fff;
+#mu-about {
+	background-color: rgb(255, 255, 255);
 	float: left;
 	width: 100%;
-  padding: 100px 0;
 }
-.row .col-md-6 .mu-about-left {
-	display: inline;
+.mu-about-area {
 	float: left;
-	width: 40px;
-}
-.row .mu-about-left img{
-  width: 100%;
-}
-.mu-about-right {
-	display: inline;
-	float: left;
-	margin-top: 35px;
-	width: 130%;
-	background-color: #fff;
-	padding: 40px;
-	margin-left: -175px;
-	box-shadow: 3px 1px 18px -9px #000;
+	padding-bottom: 5rem;
+  padding-top: 5rem;
+	width: 100%;
 }
 
+.knowledge2{
+  padding-top: 3rem;
+}
+.mu-about-left {
+	float: left;
+	width: 0%;
+}
+.mu-about-left img {
+	float: left;
+	width: 500px;
+}
+.mu-about-right h1{
+  padding-top: 10px;
+}
+.mu-about-right {
+	float: left;
+	margin-top: 100px;
+	width: 600px;
+	background-color: rgb(211, 211, 211);
+	padding: 40px;
+	margin-left: -150px;
+	/* box-shadow: 3px 1px 18px -9px #000; */
+}
+.mu-img-right{
+  margin-left: 353px;
+}
+.mu-img-right img{
+  margin-left: 92px;
+  margin-top: 100px;
+}
+.mu-text-left{
+  float: left;
+  margin-left: -950px;
+  margin-top: 0px;
+}
 .mu-about-right p {
-	font-size: 15px;
+	font-size: 12px;
 }
 
  /*********************** feature *************************/
- .row{
+
+.row{
    display: flex;
  }
  #features .col-md-6{
@@ -220,19 +243,55 @@ h1{
    padding-left: 40px;
  }
  
+  /* ********************** form ************************  */
+ .row{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+ }
+ .col-xl-4{
+   display: block;
+   margin-top: 0rem;
+   margin-bottom: 0rem;
+  color: #fff;
+ }
 
+ 
  
  
  @media screen and (max-width: 768px) {
    .row{
      flex-wrap: wrap;
    }
-   .col-xl-4{
-     margin-bottom: 0rem;
-   }
    #features{
      margin-top: 30px;
    }
+  .mu-about-area {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+  .knowledge2{
+    padding-top: 2rem;
+  }
+  .mu-about-right {
+    float: left;
+    margin-top: -50px;
+    width: 400px;
+    background-color: rgb(211, 211, 211);
+    padding: 40px;
+    margin-left: auto;
+  }
+  .mu-img-right{
+    margin-left: auto;
+  }
+  .mu-img-right img{
+    margin-left: auto;
+    margin-top: 10px;
+  }
+  .mu-text-left{
+    margin-left: auto;
+    margin-top: -50px;
+  }
  }
  
  @media screen and (max-width: 1199px) {
@@ -257,6 +316,7 @@ h1{
      margin-bottom: 0rem;
    }
  }
+ 
  
  @media screen and (max-width: 768px) {
    .tm-2col-l {
