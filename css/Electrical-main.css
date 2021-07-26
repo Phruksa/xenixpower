@@ -74,9 +74,10 @@ background: #111;
   font-size: 3em;
 }
 .banner .hero-text h6{
+  font-weight: 200;
   font-size: 1.1em;
   color: white;
-  margin: 5px 0 25px;
+  margin: 25px 0;
 }
 .banner .hero-text a{
   position: relative;
@@ -128,6 +129,9 @@ background: #111;
 
 
 /********************** top-product ************************/
+.album{
+  height: 80vh;
+}
 .textbox h1{
   margin-left: auto;
   margin-right: auto;
@@ -229,16 +233,17 @@ p{
   font-family: 'Poppins', sans-serif;
 }
 
-.btn .more{
+.btn-seemore{
   display: inline-block;
-  padding: 6px 16px;
+  padding: 6px 35px;
   background: #a80000;
-  color: #fff;
-  border-radius: 5px;
   letter-spacing: 1px;
   text-decoration: none;
   font-size: 12px;
   margin:20px auto;
+} 
+.btn-seemore a{
+  color: #fff;
 }
 .col {
   flex: 1 0 0%;
@@ -247,6 +252,77 @@ p{
   flex: 0 0 auto;
   width: 100%;
 }
+
+.container-product {
+  position: relative;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100%;
+  height: 241px;
+}
+
+.col .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.container-product:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, .3);
+}
+
+.col img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.container-product:hover .title {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 120px;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  transition: top 1s ease;
+}
+
+.container-product:hover .title {
+  top: 90px;
+}
+
+.button {
+  position: absolute;
+  left:90px;
+  top: 140px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
+.button a {
+  font-size: 12px;
+  padding:10px 20px;
+  text-align: center;
+  color: white;
+  border: solid 2px white;
+  z-index: 1;
+}
+
+.container-product:hover .button {
+  opacity: 1;
+}
+
 
 /* localrailway */
 .localrailway{
